@@ -86,8 +86,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/PhantomPI_1920x1080_01.png"
-                alt="Game Screenshot 1"
+                src="/images/PPI_SS01.png"
+                alt="Phantom PI Screenshot 1"
                 width={960}
                 height={540}
                 className="w-full h-auto object-cover"
@@ -95,8 +95,8 @@ export default function Home() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/PhantomPI_1920x1080_02.png"
-                alt="Game Screenshot 2"
+                src="/images/PPI_SS02.png"
+                alt="Phantom PI Screenshot 2"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -104,8 +104,8 @@ export default function Home() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/PhantomPI_1920x1080_03.png"
-                alt="Game Screenshot 3"
+                src="/images/PPI_SS03.png"
+                alt="Phantom PI Screenshot 3"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -113,8 +113,8 @@ export default function Home() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/PhantomPI_1920x1080_04.png"
-                alt="Game Screenshot 4"
+                src="/images/PPI_SS04.png"
+                alt="Phantom PI Screenshot 4"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -122,8 +122,8 @@ export default function Home() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/PhantomPI_1920x1080_05.png"
-                alt="Game Screenshot 52"
+                src="/images/PPI_SS05.png"
+                alt="Phantom PI Screenshot 5"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -131,8 +131,8 @@ export default function Home() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/PhantomPI_1920x1080_06.png"
-                alt="Game Screenshot 6"
+                src="/images/PPI_SS06.png"
+                alt="Phantom PI Screenshot 6"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
