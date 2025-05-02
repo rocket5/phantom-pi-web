@@ -287,10 +287,9 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-300 mb-4">
-                "This game is absolutely stunning! The story had me hooked from the beginning, and the gameplay is
-                smooth and intuitive. Worth every penny!"
+                "Different from the typical hidden object mystery, lots to do, lots to explore, lots of fun, and the graphics are great....my only complaint is that there aren't more episodes of this or similar games....I'd really like to see more from Rocket 5 if this is what they're capable of."
               </p>
-              <div className="font-medium text-white">Sarah K.</div>
+              <div className="font-medium text-white">Shayapps</div>
             </div>
             <div className="bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-600">
               <div className="flex mb-4">
@@ -299,10 +298,9 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-300 mb-4">
-                "Finally a premium mobile game with no ads or microtransactions! The graphics are console-quality and
-                the soundtrack is phenomenal."
+                "I LOVE this game... It's perfect for those that like puzzles combined with adventure style games. It's addictive so you can play thru it kinda quick. And there isn't any re-playability unless you somehow didn't finish every level. So I'm just hoping that new Chapters & updates are coming and SOON!!! Love the game guys, great job🙋🏻😘❤️👍🏻👍🏻 💋"
               </p>
-              <div className="font-medium text-white">Michael T.</div>
+              <div className="font-medium text-white">Kellie929</div>
             </div>
             <div className="bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-600">
               <div className="flex mb-4">
@@ -311,10 +309,10 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-300 mb-4">
-                "I've been playing mobile games for years, and Cosmic Odyssey is easily in my top 3 of all time. The
-                attention to detail is incredible."
+                "Love it!
+                I usually don't spend money on games, but I liked the screenshots in the App Store so I thought I'd try it. I'm glad I did because I like almost everything about it! The visuals are beautiful/original and adds a creepy-ish vibe. It also supports Canadian developers which is ultra rad!!!!"
               </p>
-              <div className="font-medium text-white">James L.</div>
+              <div className="font-medium text-white">Karczok</div>
             </div>
           </div>
         </div>
@@ -349,10 +347,10 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <Image src="/logo.png" alt="Game Logo" width={32} height={32} className="rounded-md" />
-              <span className="text-lg font-bold text-white">Phantom Hunters</span>
+              <Image src="/images/icon512.png" alt="Game Logo" width={32} height={32} className="rounded-md" />
+              <span className="text-lg font-bold text-white">The Phantom PI: Mission Apparition</span>
             </div>
-            <div className="flex gap-6 mb-4 md:mb-0">
+            {/* <div className="flex gap-6 mb-4 md:mb-0">
               <Link href="#" className="hover:text-white">
                 Privacy Policy
               </Link>
@@ -362,8 +360,8 @@ export default function Home() {
               <Link href="#" className="hover:text-white">
                 Contact
               </Link>
-            </div>
-            <div className="text-sm">© {new Date().getFullYear()} Spooky Games. All rights reserved.</div>
+            </div> */}
+            <div className="text-sm">© {new Date().getFullYear()} Rocket 5 Studios Inc. All rights reserved.</div>
           </div>
         </div>
       </footer>
