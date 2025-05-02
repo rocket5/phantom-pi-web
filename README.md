@@ -37,13 +37,13 @@ The website includes the following sections:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/phatom-pi-web.git
-cd phatom-pi-web
+git clone https://github.com/your-username/phantom-pi-web.git
+cd phantom-pi-web
 ```
 
 2. Install dependencies:
 ```bash
-pnpm install
+npm install
 ```
 
 ### Running Locally
@@ -51,7 +51,7 @@ pnpm install
 To run the development server:
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
@@ -59,7 +59,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the r
 ## Project Structure
 
 ```
-phatom-pi-web/
+phantom-pi-web/
 ├── app/                     # Next.js app folder
 │   ├── globals.css          # Global CSS
 │   ├── layout.tsx           # Root layout component
