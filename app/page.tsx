@@ -56,10 +56,10 @@ export default function Home() {
           Enter A Haunted Mansion Full of Puzzles, Secrets Tricks & Traps!
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="https://apps.apple.com/app/phantom-hunters" target="_blank" rel="noopener noreferrer">
+            <Link href="https://apps.apple.com/ca/app/phantom-p-i/id887608596" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/images/app-store-badge-xl.png"
-                alt="Download on the App Store"
+                alt="Download Phantom PI on the App Store"
                 width={240}
                 height={80}
                 className="h-14 w-auto"
