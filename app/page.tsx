@@ -15,7 +15,7 @@ export default function Home() {
           </div>
         
           <div>
-            <Link href="https://rocket5studios.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://rocket5studios.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
               <p>By Rocket 5 Studios</p>
               {/* <Image
                 src="/images/app-store-badge.png"
@@ -170,7 +170,7 @@ export default function Home() {
               With its unique blend of exploration, puzzle-solving, and a narrative-driven mystery, _The Phantom PI: Mission Apparition_ offers a family-friendly adventure packed with charm, humor, and just the right touch of spooky. 
               </p>
               <p className="text-gray-300 mb-6">
-              Featuring an <Link href="https://aaronrobertson.bandcamp.com/album/phantom-p-i-mission-apparition-ost" target="_blank" rel="noopener noreferrer">original soundtrack</Link> by Aaron Robertson.
+              Featuring an <Link href="https://aaronrobertson.bandcamp.com/album/phantom-p-i-mission-apparition-ost" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:underline">original soundtrack</Link> by Aaron Robertson.
               </p>        
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="https://apps.apple.com/ca/app/phantom-p-i/id887608596" target="_blank" rel="noopener noreferrer">
