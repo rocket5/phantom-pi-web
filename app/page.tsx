@@ -1,9 +1,25 @@
+'use client'
+
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Star } from "lucide-react"
+import { ScreenshotLightbox } from "@/components/ScreenshotLightbox"
 
 export default function Home() {
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [currentImage, setCurrentImage] = useState({ src: "", alt: "" })
+
+  const openLightbox = (src: string, alt: string) => {
+    setCurrentImage({ src, alt })
+    setLightboxOpen(true)
+  }
+
+  const closeLightbox = () => {
+    setLightboxOpen(false)
+  }
+
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
@@ -84,7 +100,8 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-8">
           {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Game Screenshots</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="rounded-lg overflow-hidden shadow-md">
+            <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openLightbox("/images/PPI_SS01.png", "Phantom PI Screenshot 1")}>
               <Image
                 src="/images/PPI_SS01.png"
                 alt="Phantom PI Screenshot 1"
@@ -93,7 +110,8 @@ export default function Home() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="rounded-lg overflow-hidden shadow-md">
+            <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openLightbox("/images/PPI_SS02.png", "Phantom PI Screenshot 2")}>
               <Image
                 src="/images/PPI_SS02.png"
                 alt="Phantom PI Screenshot 2"
@@ -102,7 +120,8 @@ export default function Home() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="rounded-lg overflow-hidden shadow-md">
+            <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openLightbox("/images/PPI_SS03.png", "Phantom PI Screenshot 3")}>
               <Image
                 src="/images/PPI_SS03.png"
                 alt="Phantom PI Screenshot 3"
@@ -111,7 +130,8 @@ export default function Home() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="rounded-lg overflow-hidden shadow-md">
+            <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openLightbox("/images/PPI_SS04.png", "Phantom PI Screenshot 4")}>
               <Image
                 src="/images/PPI_SS04.png"
                 alt="Phantom PI Screenshot 4"
@@ -120,7 +140,8 @@ export default function Home() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="rounded-lg overflow-hidden shadow-md">
+            <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openLightbox("/images/PPI_SS05.png", "Phantom PI Screenshot 5")}>
               <Image
                 src="/images/PPI_SS05.png"
                 alt="Phantom PI Screenshot 5"
@@ -129,7 +150,8 @@ export default function Home() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="rounded-lg overflow-hidden shadow-md">
+            <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openLightbox("/images/PPI_SS06.png", "Phantom PI Screenshot 6")}>
               <Image
                 src="/images/PPI_SS06.png"
                 alt="Phantom PI Screenshot 6"
@@ -142,6 +164,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Lightbox */}
+      <ScreenshotLightbox 
+        isOpen={lightboxOpen}
+        imgSrc={currentImage.src}
+        imgAlt={currentImage.alt}
+        onClose={closeLightbox}
+      />
+      
       {/* Awards Section */}
       <section id="features" className="py-16 md:py-8 bg-gradient-to-r from-purple-900 to-indigo-900">
         <div className="flex flex-col sm:flex-row gap-4 justify-center mx-auto">
