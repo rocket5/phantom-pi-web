@@ -13,29 +13,17 @@ export default function Home() {
             <Image src="/images/icon512.png" alt="Phantom PI Logo" width={40} height={40} className="rounded-md" />
             <span className="text-xl font-bold">Phantom PI: Mission Apparition</span>
           </div>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="#features" className="text-sm font-medium hover:text-primary">
-              Features
-            </Link>
-            <Link href="#trailer" className="text-sm font-medium hover:text-primary">
-              Trailer
-            </Link>
-            <Link href="#screenshots" className="text-sm font-medium hover:text-primary">
-              Screenshots
-            </Link>
-            <Link href="#about" className="text-sm font-medium hover:text-primary">
-              About
-            </Link>
-          </nav>
+        
           <div>
-            <Link href="https://apps.apple.com/ca/app/phantom-p-i/id887608596" target="_blank" rel="noopener noreferrer">
-              <Image
+            <Link href="https://rocket5studios.com" target="_blank" rel="noopener noreferrer">
+              <p>By Rocket 5 Studios</p>
+              {/* <Image
                 src="/images/app-store-badge.png"
                 alt="Download on the App Store"
-                width={140}
-                height={42}
+                width={240}
+                height={80}
                 className="h-10 w-auto"
-              />
+              /> */}
             </Link>
           </div>
         </div>
