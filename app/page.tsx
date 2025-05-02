@@ -42,9 +42,15 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative">
+      <section className="relative min-h-[500px] flex items-center">
         <div className="absolute inset-0 z-10" />
-        <Image src="/images/hero-bg.jpg" alt="Game Background" fill className="object-cover" priority />
+        <Image 
+          src="/images/hero-bg.jpg" 
+          alt="Game Background" 
+          fill 
+          className="object-cover object-center" 
+          priority 
+        />
         <div className="container mx-auto px-6 md:px-8 relative z-20 py-24 md:py-32 flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
             Adventure Awaits!
@@ -63,95 +69,8 @@ export default function Home() {
               />
             </Link>
           </div>
-          {/* <div className="flex items-center gap-2 mt-8">
-            <div className="flex">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-              ))}
-            </div>
-            <span className="text-white/80">4.3 Rating on App Store</span>
-          </div> */}
         </div>
       </section>
-
-      {/* Features Section */}
-      {/* <section id="features" className="py-16 md:py-24 bg-gray-800">
-        <div className="container mx-auto px-6 md:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Game Features</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-700 p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-purple-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Immersive Storyline</h3>
-              <p className="text-gray-300">
-                Dive into a rich narrative with branching storylines and meaningful character development.
-              </p>
-            </div>
-            <div className="bg-gray-700 p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-purple-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Stunning Visuals</h3>
-              <p className="text-gray-300">Experience breathtaking graphics optimized for the latest mobile devices.</p>
-            </div>
-            <div className="bg-gray-700 p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-purple-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Epic Soundtrack</h3>
-              <p className="text-gray-300">
-                Immerse yourself with an original orchestral soundtrack that adapts to your gameplay.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Trailer Section */}
       <section id="trailer" className="py-16 md:py-24 bg-gray-900">
@@ -173,7 +92,7 @@ export default function Home() {
       </section>
 
       {/* Screenshots Section */}
-      <section id="screenshots" className="py-16 md:py-24">
+      <section id="screenshots" className="py-16 md:py-24 bg-gray-800">
         <div className="container mx-auto px-6 md:px-8">
           {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Game Screenshots</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -235,6 +154,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Awards Section */}
+      <section id="features" className="py-16 md:py-8 bg-gradient-to-r from-purple-900 to-indigo-900">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mx-auto">
+            <Image
+              src="/images/awards.png"
+              alt="Awards"
+              width={553}
+              height={186}
+            />
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-16 md:py-24 bg-gray-800">
         <div className="container mx-auto px-6 md:px-8">
@@ -278,7 +209,7 @@ export default function Home() {
       {/* Testimonials */}
       <section className="py-16 md:py-24 bg-gray-900">
         <div className="container mx-auto px-6 md:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">What Players Say</h2>
+          {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">What Players Say</h2> */}
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-600">
               <div className="flex mb-4">
