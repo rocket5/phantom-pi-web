@@ -14,20 +14,20 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://phantompi.com'),
+  metadataBase: new URL('https://thephantompi.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'The Phantom PI: Mission Apparition | Puzzle Adventure Game',
     description: 'Enter a haunted mansion full of puzzles, secrets, tricks & traps in this award-winning adventure game.',
-    url: 'https://phantompi.com',
+    url: 'https://thephantompi.com',
     siteName: 'The Phantom PI: Mission Apparition',
     images: [
       {
-        url: '/images/icon1024.png',
-        width: 1024,
-        height: 1024,
+        url: "https://thephantompi.com/images/og-image.jpg",
+        width: 1200,
+        height: 630,
         alt: 'The Phantom PI: Mission Apparition Logo',
       }
     ],
@@ -37,16 +37,16 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'The Phantom PI: Mission Apparition | Puzzle Adventure Game',
-    description: 'Enter a haunted mansion full of puzzles, secrets, tricks & traps in this adventure game',
-    images: ['/images/icon1024.png'],
+    description: 'Enter a haunted mansion full of puzzles, secrets, tricks & traps!',
+    images: ["https://thephantompi.com/images/og-image.jpg"],
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/images/icon512.png', sizes: '512x512', type: 'image/png' },
+      { url: 'https://thephantompi.com/favicon.ico' },
+      { url: 'https://thephantompi.com/images/icon512.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
-      { url: '/images/icon512.png' },
+      { url: 'https://thephantompi.com/images/icon512.png' },
     ],
   },
 }
@@ -66,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://www.thephantompi.com/" />
+        <link rel="canonical" href="https://thephantompi.com/" />
       </head>
       <body>
         {children}
@@ -81,10 +81,10 @@ export default function RootLayout({
               "description": "Enter a haunted mansion full of puzzles, secrets, tricks & traps in this award-winning adventure game.",
               "offers": {
                 "@type": "Offer",
-                "price": "0.00",
+                "price": "0.99",
                 "priceCurrency": "USD"
               },
-              "image": "https://www.thephantompi.com/images/icon1024.png",
+              "image": "https://thephantompi.com/images/icon1024.png",
               "downloadUrl": "https://apps.apple.com/ca/app/phantom-p-i/id887608596"
             }
           `}
