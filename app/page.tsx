@@ -23,23 +23,16 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-gray-900 backdrop-blur supports-[backdrop-filter]:bg-gray-900/95">
         <div className="container mx-auto px-6 md:px-8 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Image src="/images/icon512.png" alt="Phantom PI Logo" width={40} height={40} className="rounded-md" />
-            <span className="text-xl font-bold">Phantom PI: Mission Apparition</span>
+            <span className="text-xl font-bold text-white">Phantom PI: Mission Apparition</span>
           </div>
         
           <div>
-            <Link href="https://rocket5studios.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            <Link href="https://rocket5studios.com" target="_blank" rel="noopener noreferrer" className="hover:underline text-white/70">
               <p>By Rocket 5 Studios</p>
-              {/* <Image
-                src="/images/app-store-badge.png"
-                alt="Download on the App Store"
-                width={240}
-                height={80}
-                className="h-10 w-auto"
-              /> */}
             </Link>
           </div>
         </div>
