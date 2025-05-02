@@ -5,31 +5,31 @@ export const dynamic = 'force-static'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://phantompi.com',
+      url: 'https://www.thephantompi.com/',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://phantompi.com/#features',
+      url: 'https://www.thephantompi.com/#features',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://phantompi.com/#trailer',
+      url: 'https://www.thephantompi.com/#trailer',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://phantompi.com/#screenshots',
+      url: 'https://www.thephantompi.com/#screenshots',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://phantompi.com/#about',
+      url: 'https://www.thephantompi.com/#about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,

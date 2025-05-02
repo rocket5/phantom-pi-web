@@ -66,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://phantompi.com" />
+        <link rel="canonical" href="https://www.thephantompi.com/" />
       </head>
       <body>
         {children}
@@ -84,7 +84,7 @@ export default function RootLayout({
                 "price": "0.00",
                 "priceCurrency": "USD"
               },
-              "image": "https://phantompi.com/images/icon1024.png",
+              "image": "https://www.thephantompi.com/images/icon1024.png",
               "downloadUrl": "https://apps.apple.com/ca/app/phantom-p-i/id887608596"
             }
           `}
