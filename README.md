@@ -9,18 +9,22 @@ The website includes the following sections:
 - Hero section with game introduction
 - Features section highlighting key game functionalities
 - Trailer section with embedded video
-- Screenshots gallery
+- Screenshots gallery with lightbox functionality
 - About section with game information
 - Download section with App Store link
+- Awards section showcasing recognition
 
 ## Technologies Used
 
 - **Next.js 15** - React framework for server-rendered React applications
-- **React 19** - JavaScript library for building user interfaces
+- **React 18** - JavaScript library for building user interfaces
 - **Tailwind CSS** - Utility-first CSS framework
-- **Radix UI** - Unstyled, accessible UI components
+- **Radix UI** - Comprehensive library of unstyled, accessible UI components
 - **Lucide React** - Icons library
 - **Next Themes** - Theme toggling utilities for Next.js
+- **Embla Carousel** - Carousel/slider component
+- **React Hook Form** - Form handling with validation
+- **Zod** - TypeScript-first schema validation
 
 ## Prerequisites
 
@@ -56,21 +60,29 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the r
 
 ```
 phatom-pi-web/
-├── app/                 # Next.js app folder
-│   ├── globals.css      # Global CSS
-│   ├── layout.tsx       # Root layout component
-│   └── page.tsx         # Home page component
-├── components/          # React components
-│   ├── ui/              # UI components from shadcn/ui
-│   └── theme-provider.tsx
-├── public/              # Static assets
-│   ├── logo.png
-│   ├── hero-bg.jpg
-│   ├── screenshot*.jpg
-│   └── ...
-├── next.config.mjs      # Next.js configuration
-├── tailwind.config.ts   # Tailwind CSS configuration
-└── package.json         # Project dependencies and scripts
+├── app/                     # Next.js app folder
+│   ├── globals.css          # Global CSS
+│   ├── layout.tsx           # Root layout component
+│   ├── page.tsx             # Home page component
+│   ├── sitemap.ts           # Sitemap generation
+│   ├── robots.ts            # Robots.txt configuration
+│   └── manifest.ts          # PWA manifest configuration
+├── components/              # React components
+│   ├── ui/                  # UI components from shadcn/ui library
+│   ├── ScreenshotLightbox.tsx # Custom lightbox for screenshots
+│   └── theme-provider.tsx   # Theme provider component
+├── hooks/                   # Custom React hooks
+│   ├── use-mobile.tsx       # Hook for detecting mobile devices
+│   └── use-toast.ts         # Toast notification hook
+├── lib/                     # Utility functions
+│   └── utils.ts             # General utility functions
+├── public/                  # Static assets
+│   ├── images/              # Images folder with game screenshots and assets
+│   └── favicon.ico          # Site favicon
+├── styles/                  # Additional styles
+├── next.config.mjs          # Next.js configuration
+├── tailwind.config.ts       # Tailwind CSS configuration
+└── package.json             # Project dependencies and scripts
 ```
 
 ## Building for Production
@@ -78,16 +90,16 @@ phatom-pi-web/
 To create an optimized production build:
 
 ```bash
-pnpm build
+npm run build
 ```
 
-This will generate a `.next` folder with the production build files.
+This will generate a static export in the `out` folder with the production build files, as configured in `next.config.mjs` with `output: 'export'`.
 
 ## Deploying to a Static Web Host
 
-Since this is a static website, you can export it as static HTML:
+This website is configured as a static site for easy deployment to any hosting platform:
 
-1. In your `next.config.mjs`, ensure you have the proper export configuration:
+1. The project is configured for static export in `next.config.mjs`:
 ```javascript
 const nextConfig = {
   output: 'export',
@@ -98,27 +110,23 @@ const nextConfig = {
 }
 ```
 
-2. Build and export the site:
-```bash
-pnpm build
-```
-
-3. The static site will be generated in the `out` directory. You can upload these files to any static web hosting service like:
+2. After building with `npm run build`, the static site is generated in the `out` directory. You can upload these files to any static web hosting service like:
    - Netlify
    - Vercel
    - GitHub Pages
    - AWS S3
    - Any traditional web hosting service
 
-4. If using a traditional web host:
+3. If using a traditional web host:
    - Upload all contents of the `out` directory to your webhost's public directory (often public_html, www, or htdocs)
    - Ensure your host is configured to serve the index.html file when a directory is requested
 
 ## Customization
 
 - Edit the content in `app/page.tsx` to update the website text and images
-- Replace images in the `public` directory with your own
+- Replace images in the `public/images` directory with your own
 - Modify colors and styling in `tailwind.config.ts`
+- Adjust theme settings in the theme provider
 
 ## Troubleshooting
 
