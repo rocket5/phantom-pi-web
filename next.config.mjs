@@ -20,6 +20,8 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
+  basePath: '/phantom-pi-web',
+  assetPrefix: '/phantom-pi-web',
 }
 
 export default nextConfig
