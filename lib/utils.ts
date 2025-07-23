@@ -4,3 +4,8 @@ import { twMerge } from "tailwind-merge"
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
+
+export function getImagePath(path: string): string {
+  const basePath = process.env.NODE_ENV === 'production' ? '/phantom-pi-web' : ''
+  return `${basePath}${path}`
+}

@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Star } from "lucide-react"
 import { ScreenshotLightbox } from "@/components/ScreenshotLightbox"
+import { getImagePath } from "@/lib/utils"
 
 export default function Home() {
   const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -26,7 +27,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-gray-900 backdrop-blur supports-[backdrop-filter]:bg-gray-900/95">
         <div className="container mx-auto px-6 md:px-8 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image src="/images/icon512.png" alt="Phantom PI Logo" width={40} height={40} className="rounded-md" />
+            <Image src={getImagePath("/images/icon512.png")} alt="Phantom PI Logo" width={40} height={40} className="rounded-md" />
             <span className="text-xl font-bold text-white">Phantom PI: Mission Apparition</span>
           </div>
         
@@ -42,7 +43,7 @@ export default function Home() {
       <section className="relative min-h-[500px] flex items-center">
         <div className="absolute inset-0 z-10" />
         <Image 
-          src="/images/hero-bg.jpg" 
+          src={getImagePath("/images/hero-bg.jpg")} 
           alt="Game Background" 
           fill 
           className="object-cover object-center" 
@@ -58,7 +59,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="https://apps.apple.com/ca/app/phantom-p-i/id887608596" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/images/app-store-badge-xl.png"
+                src={getImagePath("/images/app-store-badge-xl.png")}
                 alt="Download Phantom PI on the App Store"
                 width={240}
                 height={80}
@@ -94,9 +95,9 @@ export default function Home() {
           {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Game Screenshots</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
-                onClick={() => openLightbox("/images/PPI_SS01.png", "Phantom PI Screenshot 1")}>
+                onClick={() => openLightbox(getImagePath("/images/PPI_SS01.png"), "Phantom PI Screenshot 1")}>
               <Image
-                src="/images/PPI_SS01.png"
+                src={getImagePath("/images/PPI_SS01.png")}
                 alt="Phantom PI Screenshot 1"
                 width={960}
                 height={540}
@@ -104,9 +105,9 @@ export default function Home() {
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
-                onClick={() => openLightbox("/images/PPI_SS02.png", "Phantom PI Screenshot 2")}>
+                onClick={() => openLightbox(getImagePath("/images/PPI_SS02.png"), "Phantom PI Screenshot 2")}>
               <Image
-                src="/images/PPI_SS02.png"
+                src={getImagePath("/images/PPI_SS02.png")}
                 alt="Phantom PI Screenshot 2"
                 width={600}
                 height={400}
@@ -114,9 +115,9 @@ export default function Home() {
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
-                onClick={() => openLightbox("/images/PPI_SS03.png", "Phantom PI Screenshot 3")}>
+                onClick={() => openLightbox(getImagePath("/images/PPI_SS03.png"), "Phantom PI Screenshot 3")}>
               <Image
-                src="/images/PPI_SS03.png"
+                src={getImagePath("/images/PPI_SS03.png")}
                 alt="Phantom PI Screenshot 3"
                 width={600}
                 height={400}
@@ -124,9 +125,9 @@ export default function Home() {
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
-                onClick={() => openLightbox("/images/PPI_SS04.png", "Phantom PI Screenshot 4")}>
+                onClick={() => openLightbox(getImagePath("/images/PPI_SS04.png"), "Phantom PI Screenshot 4")}>
               <Image
-                src="/images/PPI_SS04.png"
+                src={getImagePath("/images/PPI_SS04.png")}
                 alt="Phantom PI Screenshot 4"
                 width={600}
                 height={400}
@@ -134,9 +135,9 @@ export default function Home() {
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
-                onClick={() => openLightbox("/images/PPI_SS05.png", "Phantom PI Screenshot 5")}>
+                onClick={() => openLightbox(getImagePath("/images/PPI_SS05.png"), "Phantom PI Screenshot 5")}>
               <Image
-                src="/images/PPI_SS05.png"
+                src={getImagePath("/images/PPI_SS05.png")}
                 alt="Phantom PI Screenshot 5"
                 width={600}
                 height={400}
@@ -144,9 +145,9 @@ export default function Home() {
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-[1.02]"
-                onClick={() => openLightbox("/images/PPI_SS06.png", "Phantom PI Screenshot 6")}>
+                onClick={() => openLightbox(getImagePath("/images/PPI_SS06.png"), "Phantom PI Screenshot 6")}>
               <Image
-                src="/images/PPI_SS06.png"
+                src={getImagePath("/images/PPI_SS06.png")}
                 alt="Phantom PI Screenshot 6"
                 width={600}
                 height={400}
@@ -169,7 +170,7 @@ export default function Home() {
       <section id="features" className="py-16 md:py-8 bg-gradient-to-r from-purple-900 to-indigo-900">
         <div className="flex flex-col sm:flex-row gap-4 justify-center mx-auto">
             <Image
-              src="/images/awards.png"
+              src={getImagePath("/images/awards.png")}
               alt="Awards"
               width={553}
               height={186}
@@ -198,7 +199,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="https://apps.apple.com/ca/app/phantom-p-i/id887608596" target="_blank" rel="noopener noreferrer">
                   <Image
-                    src="/images/app-store-badge.png"
+                    src={getImagePath("/images/app-store-badge.png")}
                     alt="Download on the App Store"
                     width={140}
                     height={42}
@@ -210,7 +211,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 opacity-30 blur-xl"></div>
               <div className="relative rounded-xl overflow-hidden shadow-xl">
-                <Image src="/images/icon1024.png" alt="Game on Device" width={600} height={800} className="w-full h-auto" />
+                <Image src={getImagePath("/images/icon1024.png")} alt="Game on Device" width={600} height={800} className="w-full h-auto" />
               </div>
             </div>
           </div>
@@ -274,7 +275,7 @@ export default function Home() {
             className="inline-block"
           >
             <Image
-              src="/images/app-store-badge.png"
+              src={getImagePath("/images/app-store-badge.png")}
               alt="Download on the App Store"
               width={180}
               height={54}
@@ -289,7 +290,7 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <Image src="/images/icon512.png" alt="Game Logo" width={32} height={32} className="rounded-md" />
+              <Image src={getImagePath("/images/icon512.png")} alt="Game Logo" width={32} height={32} className="rounded-md" />
               <span className="text-lg font-bold text-white">The Phantom PI: Mission Apparition</span>
             </div>
             {/* <div className="flex gap-6 mb-4 md:mb-0">
